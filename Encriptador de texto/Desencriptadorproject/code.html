@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+        <link rel="shortcut icon" href="images/secure.png" type="image/x-icon" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="project.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="encriptar">
+        <textarea
+          name="text"
+          class="text"
+          id="text"
+          cols="30"
+          rows="15"
+          placeholder="Por favor, añade un texto"
+        ></textarea>
+
+        <div class="terminos">
+          <p>Solo letras minúsculas y sin acentos.</p>
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <input
+            type="button"
+            class="btn-desencriptar"
+            value="Desencriptar"
+            onclick="desencriptar()"
+          />
+        </div>
+      </div>
+      <div class="encriptado">
+        <img src="images/sherlock.png" alt="" id="sherlock" />
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje">Por favor agrega un texto a desencriptar</h2>
+          <p id="parrafo">
+            Ingresa el texto que deseas encriptar o desencriptar por favor
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="project.js"></script>
+</html>
+
